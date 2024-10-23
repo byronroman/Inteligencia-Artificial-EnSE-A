@@ -8,3 +8,4 @@ pip install tables
 pip install gtts
 pip install pygame
 pip install pillow
+pip install --upgrade mediapipe tensorboard tensorflow-intel
