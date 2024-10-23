@@ -150,7 +150,7 @@ def evaluate_model(src=None, threshold=0.8, margin_frame=1, delay_frames=3):
                         x_start += text_width + 2 * padding + 10  
                 
                 draw_keypoints(frame, results)
-                cv2.imshow('Traductor EnSENA - Lengua de senas Chilena', frame)
+                cv2.imshow('Interpretador de senas en tiempo real. EnSENA - Lengua de senas Chilena', frame)
                 if cv2.waitKey(10) & 0xFF == ord('q'):
                     break
 
