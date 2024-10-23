@@ -1,8 +1,8 @@
 import os
 from flask import Flask, request
 from werkzeug.utils import secure_filename
-from Dependencias.process_video import process_video
-from Dependencias.evaluate_model import evaluate_model
+from process_video import process_video
+from evaluate_model import evaluate_model
 
 app = Flask(__name__)
 

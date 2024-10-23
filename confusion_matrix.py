@@ -2,7 +2,7 @@ import os
 import numpy as np
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from keras.models import load_model
-from Dependencias.helpers import get_word_ids, get_sequences_and_labels
+from helpers import get_word_ids, get_sequences_and_labels
 from constants import *
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 import matplotlib.pyplot as plt

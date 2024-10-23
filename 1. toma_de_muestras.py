@@ -2,7 +2,7 @@ import os
 import cv2
 import numpy as np
 from mediapipe.python.solutions.holistic import Holistic
-from Dependencias.helpers import create_folder, draw_keypoints, mediapipe_detection, save_frames, there_hand
+from helpers import create_folder, draw_keypoints, mediapipe_detection, save_frames, there_hand
 from constants import FONT, FONT_POS, FONT_SIZE, FRAME_ACTIONS_PATH, ROOT_PATH
 from datetime import datetime
 
@@ -94,6 +94,6 @@ def capture_samples(path, margin_frame=1, min_cant_frames=5, delay_frames=3):
         cv2.destroyAllWindows()
 
 if __name__ == "__main__":
-    word_name = "como_estas" # Aquí se debe poner la palabra para la que deseamos realizar la toma de frames
+    word_name = "hola-der" # Aquí se debe poner la palabra para la que deseamos realizar la toma de frames
     word_path = os.path.join(ROOT_PATH, FRAME_ACTIONS_PATH, word_name)
     capture_samples(word_path)

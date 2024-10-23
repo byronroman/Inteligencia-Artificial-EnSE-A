@@ -8,10 +8,10 @@ from PyQt5.uic import loadUi
 import numpy as np
 from keras.models import load_model
 from mediapipe.python.solutions.holistic import Holistic
-from Dependencias.evaluate_model import normalize_keypoints
-from Dependencias.helpers import *
+from evaluate_model import normalize_keypoints
+from helpers import *
 from constants import *
-from Dependencias.text_to_speech import text_to_speech
+from text_to_speech import text_to_speech
 
 
 class VideoRecorder(QMainWindow):

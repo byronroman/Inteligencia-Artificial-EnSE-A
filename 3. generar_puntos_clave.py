@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 from mediapipe.python.solutions.holistic import Holistic
-from Dependencias.helpers import *
+from helpers import *
 from constants import *
 
 def create_keypoints(word_id, words_path, hdf_path):
