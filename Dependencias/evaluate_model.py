@@ -3,10 +3,10 @@ import cv2
 import numpy as np
 from mediapipe.python.solutions.holistic import Holistic
 from keras.models import load_model
-from helpers import *
+from Dependencias.helpers import *
 from constants import *
 from tensorflow.keras.preprocessing.sequence import pad_sequences
-from text_to_speech import text_to_speech
+from Dependencias.text_to_speech import text_to_speech
 
 def interpolate_keypoints(keypoints, target_length=15):
     current_length = len(keypoints)
